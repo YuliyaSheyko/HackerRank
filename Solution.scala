@@ -1,10 +1,9 @@
-class Solution {
+object Solution {
   def main(args: Array[String]) {
     val line = scala.io.StdIn.readLine().split(" ")
     val n = line(0).toCharArray.map(_.asDigit).sum
     val k = line(1).toLong
     val input = (n * k).toString
-    println(input)
     println(superDigit(input))
   }
   @scala.annotation.tailrec
